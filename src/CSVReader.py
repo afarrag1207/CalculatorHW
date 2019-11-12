@@ -1,9 +1,14 @@
 import csv
 
-class CSVReader:
-    with open('UnitTestAddition.csv', mode='r') as csv_file:
-        csv_reader = csv.DictReader(cvs_file)
+filename = "UnitTestAddition.csv"
+fields = []
+rows = []
 
+with open (filename, 'r') as csvfile:
+    csvreader = csv.reader(csvfile)
+    fields = csvreader.next()
+    for row in csvreader:
+        rows.append(row)
 
 
 
