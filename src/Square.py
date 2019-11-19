@@ -1,2 +1,2 @@
 def square(a):
-    return float(a**2)
+    return int(a)**2

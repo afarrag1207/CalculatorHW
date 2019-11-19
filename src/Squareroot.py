@@ -1,2 +1,2 @@
 def squareroot(a):
-    return float(a**(1/2.0))
+    return int(a) ** (1 / 2.0)
